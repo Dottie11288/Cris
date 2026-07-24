@@ -1,106 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJECT AURORA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>PROJECT AURORA</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<div id="particles"></div>
+<canvas id="bg"></canvas>
 
-<div class="container">
+<div id="app">
 
-    <div id="welcome" class="screen active">
+<section id="welcome" class="page active">
 
-        <h3 class="small">SISTEMA SEGURO</h3>
+<h4>SISTEMA SEGURO</h4>
 
-        <h1>PROJECT AURORA</h1>
+<h1>PROJECT AURORA</h1>
 
-        <div class="terminal">
+<div class="terminal">
 
-            <p>> Inicializando...</p>
-            <p>> Verificando dispositivo NFC...</p>
-            <p>> Acceso autorizado.</p>
+<p>> Inicializando...</p>
+<p>> NFC detectado.</p>
+<p>> Acceso concedido.</p>
 
-        </div>
+</div>
 
-        <div class="progress">
+<button id="start">
 
-            <div class="progress-bar"></div>
+INICIAR
 
-        </div>
+</button>
 
-        <button id="startBtn">
-            INICIAR
-        </button>
+</section>
 
-    </div>
+<section id="level1" class="page">
 
+<h2>NIVEL 1</h2>
 
-    <div id="level1" class="screen">
+<p>Todo comienza uniendo los puntos.</p>
 
-        <h2>NIVEL 1</h2>
+<canvas id="constellation" width="340" height="420"></canvas>
 
-        <p>Todo comienza uniendo los puntos.</p>
+</section>
 
-        <canvas id="constellation" width="340" height="500"></canvas>
+<section id="level2" class="page">
 
-    </div>
+<h2>NIVEL 2</h2>
 
+<p>Te doy uno.</p>
 
-    <div id="level2" class="screen">
+<p>¿Qué?</p>
 
-        <h2>NIVEL 2</h2>
+<p>¿Qué quieres dos?</p>
 
-        <p>Te doy uno.</p>
-        <p>¿Qué?</p>
-        <p>¿Qué quieres, dos?</p>
+<input id="answer">
 
-        <input
-            id="answer"
-            placeholder="Escribe la respuesta..."
-        >
+<button id="check">
 
-        <button id="checkAnswer">
+COMPROBAR
 
-            COMPROBAR
+</button>
 
-        </button>
+</section>
 
-    </div>
+<section id="level3" class="page">
 
+<h2>NIVEL 3</h2>
 
-    <div id="level3" class="screen">
+<p>Encuentra mi corazón.</p>
 
-        <h2>NIVEL 3</h2>
+<div id="hearts"></div>
 
-        <p>Entre todos...</p>
+</section>
 
-        <p>Encuentra mi corazón.</p>
+<section id="final" class="page">
 
-        <div id="hearts"></div>
+<h2>ARCHIVO DESBLOQUEADO</h2>
 
-    </div>
+<h1>Cristina</h1>
 
+<button id="video">
 
-    <div id="final" class="screen">
+▶ VER LA SORPRESA
 
-        <h2>ARCHIVO PROTEGIDO</h2>
+</button>
 
-        <h1>Cristina</h1>
+</section>
 
-        <p>Estado:</p>
+</div>
 
-        <h3>DESBLOQUEADO ✓</h3>
+<script src="script.js"></script>
 
-        <button id="videoBtn">
-
-            ▶ ABRIR
+</body>
+</html>
