@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT AURORA</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<div class="container">
+
+    <div id="welcome" class="screen active">
+
+        <h3 class="small">SISTEMA SEGURO</h3>
+
+        <h1>PROJECT AURORA</h1>
+
+        <div class="terminal">
+
+            <p>> Inicializando...</p>
+            <p>> Verificando dispositivo NFC...</p>
+            <p>> Acceso autorizado.</p>
+
+        </div>
+
+        <div class="progress">
+
+            <div class="progress-bar"></div>
+
+        </div>
+
+        <button id="startBtn">
+            INICIAR
+        </button>
+
+    </div>
+
+
+    <div id="level1" class="screen">
+
+        <h2>NIVEL 1</h2>
+
+        <p>Todo comienza uniendo los puntos.</p>
+
+        <canvas id="constellation" width="340" height="500"></canvas>
+
+    </div>
+
+
+    <div id="level2" class="screen">
+
+        <h2>NIVEL 2</h2>
+
+        <p>Te doy uno.</p>
+        <p>¿Qué?</p>
+        <p>¿Qué quieres, dos?</p>
+
+        <input
+            id="answer"
+            placeholder="Escribe la respuesta..."
+        >
+
+        <button id="checkAnswer">
+
+            COMPROBAR
+
+        </button>
+
+    </div>
+
+
+    <div id="level3" class="screen">
+
+        <h2>NIVEL 3</h2>
+
+        <p>Entre todos...</p>
+
+        <p>Encuentra mi corazón.</p>
+
+        <div id="hearts"></div>
+
+    </div>
+
+
+    <div id="final" class="screen">
+
+        <h2>ARCHIVO PROTEGIDO</h2>
+
+        <h1>Cristina</h1>
+
+        <p>Estado:</p>
+
+        <h3>DESBLOQUEADO ✓</h3>
+
+        <button id="videoBtn">
+
+            ▶ ABRIR
